@@ -116,6 +116,13 @@ padding-top: 0.8em;
     word-wrap: break-word;
 }
 
+.bgbox {
+  margin-top: 6em; 
+  margin-bottom:2em;
+  padding: 0.2em;
+  color:#3A3F44;
+  background-color: #dee2e6; 
 
+}
 
 }
