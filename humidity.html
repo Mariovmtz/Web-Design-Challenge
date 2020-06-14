@@ -21,16 +21,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link border-0" href="index.html">Summary <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link border-0" href="index.html">Summary</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle border-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Plots
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item active" href="humidity.html">Humidity</a>
                 <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                 <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
               </div>
@@ -45,47 +45,44 @@
         </div>
       </nav>
   
-  
       <div class="container">
   
         <div class="page-header">
           <div class="row">
             <div class="col-lg-7 bgbox">
-              <h2>Summary</h2>
+              <h2>Humidity</h2>
               <hr>
-              <img src="visualizations/scatter_lat_temp.png" id="small-image" alt="Latitude vs Max Temperature Graph">
-              <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first
-                pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+              <img src="visualizations/scatter_lat_hum.png"  alt="Latitude vs Humidity Graph">
+              <p> The scatterplot is showing the relationship between latitude (independiente variable) and humidity (dependent variable) 
+                it's sugessting that cities near ecuator (0 latitude) usually have a high percentage of humidity.
+
+
               </p>
-              <p>
-                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included:
-                temperature, cloudiness, wind speed and humidity. THis site provides the source data and visualizations created as part of the analysis,
-                as well as explanations and descriptions of any trends and correlations witnessed.
-              </p>
+
             </div>
             <div class="col-md-auto">
             </div>
             <div class="col-md-4 bgbox">
-              <h2>Visualizations</h2>
-              <hr>
-              <div class="container">
-              <a href="max_temperature.html">
-                <img class="panel thumbnails-image" src="visualizations/scatter_lat_temp.png" alt="Max Temperature Image">
-              </a>
-              <a href="humidity.html" >
-              <img class="panel thumbnails-image"  src="visualizations/scatter_lat_hum.png"  alt="Latitude vs Humidity Graph">
-              </a>
-              <a href="cloudiness.html" >
-              <img class="panel thumbnails-image" src="visualizations/scatter_lat_cloud.png"  alt="Latitude vs Cloudiness Graph">
-              </a>
-              <a href="wind_speed.html" >
-              <img class="panel thumbnails-image" src="visualizations/scatter_lat_wind.png"  alt="Latitude vs Wind Speed Graph">
-              </a>
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="container">
+                <a href="max_temperature.html">
+                  <img class="panel thumbnails-image" src="visualizations/scatter_lat_temp.png" alt="Max Temperature Image">
+                </a>
+                <a href="humidity.html" >
+                <img class="panel thumbnails-image activeimg"  src="visualizations/scatter_lat_hum.png"  alt="Latitude vs Humidity Graph">
+                </a>
+                <a href="cloudiness.html" >
+                <img class="panel thumbnails-image" src="visualizations/scatter_lat_cloud.png"  alt="Latitude vs Cloudiness Graph">
+                </a>
+                <a href="wind_speed.html" >
+                <img class="panel thumbnails-image" src="visualizations/scatter_lat_wind.png"  alt="Latitude vs Wind Speed Graph">
+                </a>
+                </div>
               </div>
-            </div>
           </div>
-        </div>
-
+        </div> 
+ 
 
         <footer id="footer">
           <p>&copy; Made by Mario Martinez for ITESM Coding Bootcamp 2020</p>
@@ -93,7 +90,6 @@
 
 
 
-      </div>
 
 
         <!-- jQuery library -->
